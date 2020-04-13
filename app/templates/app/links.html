@@ -1,0 +1,31 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+    {% load staticfiles %}
+    
+    <h2>{{ title }}.</h2>
+    <h3>{{ message }}</h3>
+
+    <table>
+        <tr>
+            <td align="center"><a href ="https://velodrive.ru/" target="_blank"> <img src="{% static 'app/content/velodrive.png' %}" alt="Logo 1" width="250px"/></a></td>
+            <td align="center"><a href ="https://sportmaster.ru/" target="_blank"> <img src="{% static 'app/content/sportmaster.png' %}" alt="Logo 2" width="250px"/></a></td>
+            <td align="center"><a href ="https://velodom-kolomna.ru/" target="_blank"> <img src="{% static 'app/content/velodom.png' %}" alt="Logo 3" width="250px"/></a></td>
+        </tr>
+        <tr>
+            <td><p>Магазин «ВЕЛОДРАЙВ»</p> <p>Открылся в 2005 году, а сейчас сеть магазинов по продаже велосипедов и спортивных товаров насчитывает более 20 торговых точек в Санкт-Петербурге, Москве, Екатеринбурге и Ижевске.</p></td>
+            <td><p>Магазин «СПОРТМАСТЕР»</p> <p>Мы — спортивный магазин для всей семьи! Все для спорта и активного отдыха – от самых простых спорттоваров до технологичного снаряжения последнего поколения.</p></td>
+            <td><p>Магазин «ДИНАМИКА»</p> <p>Был основан в Коломне в 2003 году. За время работы магазина много жителей Коломны, Воскресенска, Ступино, Егорьевска, Луховиц, Озер и других близлежащих городов стали нашими довольными клиентами.</p></td>
+        </tr>
+        <tr>
+            <td align="center"><a href ="https://texnodrom24.ru/" target="_blank"> <img src="{% static 'app/content/technodrom.png' %}" alt="Logo 4" width="250px"/></a></td>
+            <td align="center"><a href ="http://sportlandia.ru/" target="_blank"> <img src="{% static 'app/content/sportlandiya.png' %}" alt="Logo 5" width="250px"/></a></td>
+            <td align="center"><a href ="https://www.dinamika-sport.ru/" target="_blank"> <img src="{% static 'app/content/dinamika.png' %}" alt="Logo 6" width="250px"/></a></td>
+        </tr>
+        <tr>
+            <td><p>Магазин «ТЕХНОДРОМ»</p> <p>У нас вы подберёте технику и товары для туризма, аксессуары для комфортного отдыха на природе, удобную обувь для спорта и отдыха, шлемы и экипировку для мотоциклистов, охотников, рыбаков и туристов.</p></td>
+            <td><p>Магазин «СПОРТЛАНДИЯ»</p> <p>Сеть спортивных магазинов для всей семьи с широким выбором качественных товаров для занятий спортом и активного отдыха.</p></td>
+            <td><p>Магазин «ВЕЛОДОМ»</p> <p>был основан в Коломне в 2003 году. За время работы магазина много жителей Коломны, Воскресенска, Ступино, Егорьевска, Луховиц, Озер и других близлежащих городов стали нашими довольными клиентами.</p></td>
+        </tr>
+    </table>
+{% endblock %}

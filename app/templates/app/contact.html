@@ -1,0 +1,21 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    г. Псков<br />
+    ул. Алексея Алёхина, дом 26<br />
+    <abbr title="Телефон">Тел: +7(911)382-30-86</abbr>
+</address>
+
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb4e46332efafa1261ae679d9d68b40fddfc1357b27447ec4409448ca563296b&amp;source=constructor" width="700" height="430" frameborder="0"></iframe>
+
+<address>
+    <strong>Поддержка:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Реклама:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+{% endblock %}
